@@ -16,12 +16,22 @@ struct MovieRow: View {
         
         HStack(alignment: .center, spacing: 8) {
             
-            Thumbnail(movieId: movie.id)
-                
+            Group {
+                Thumbnail(movieId: movie.id)
+            }
+            .background(Color.black)
+            
             VStack(alignment: .leading, spacing: 0) {
-                Text(movie.title).fontWeight(.bold)
-                Text(movie.originalTitle).font(.subheadline)
-                Text(movie.releaseYear).font(.subheadline)
+                
+                Text(movie.title)
+                    .fontWeight(.bold)
+                
+                Text(movie.originalTitle)
+                    .font(.subheadline)
+                
+                Text(movie.releaseYear)
+                    .font(.subheadline)
+                
             }
             
             Spacer()
@@ -36,12 +46,15 @@ struct MovieRow_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
+            
             MovieRow(movie: DummyData.movies[0])
                 .environmentObject(MovieData())
+            
             MovieRow(movie: DummyData.movies[1])
                 .environmentObject(MovieData())
+            
         }
-           .previewLayout(.fixed(width: 300, height: 70))
+           .previewLayout(.fixed(width: 400, height: 200))
         
     }
 }

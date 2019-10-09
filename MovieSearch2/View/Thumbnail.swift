@@ -8,6 +8,9 @@
 
 import SwiftUI
 
+fileprivate var width: CGFloat = 185
+fileprivate var height: CGFloat = 278
+
 struct Thumbnail: View {
     
     @EnvironmentObject private var searchData: MovieData
@@ -19,7 +22,8 @@ struct Thumbnail: View {
         self.getImage()
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 105)
+            .frame(width: width, height: height)
+    
     }
     
     func getImage() -> Image {
@@ -35,6 +39,6 @@ struct Thumbnail_Previews: PreviewProvider {
             Thumbnail(movieId: DummyData.movies[0].id)
             .environmentObject(MovieData())
         }
-         .previewLayout(.fixed(width: 105, height: 70))
+        .previewLayout(.fixed(width: width, height: height))
     }
 }
