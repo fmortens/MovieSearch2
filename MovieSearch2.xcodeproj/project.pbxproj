@@ -27,6 +27,7 @@
 		DE6D0345234B3038000D4666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6D0343234B3038000D4666 /* LaunchScreen.storyboard */; };
 		DEBA849D234CFFCF005DE767 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBA849C234CFFCF005DE767 /* MovieDetailsView.swift */; };
 		DEBF69E3234DE8DC009240B0 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF69E2234DE8DC009240B0 /* Thumbnail.swift */; };
+		DEBF69E5234E04B2009240B0 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF69E4234E04B2009240B0 /* BackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DE6D0346234B3038000D4666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBA849C234CFFCF005DE767 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		DEBF69E2234DE8DC009240B0 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		DEBF69E4234E04B2009240B0 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				DE6D033C234B3036000D4666 /* MovieList.swift */,
 				DE0CAE4B234BD75D0071FF96 /* MovieRow.swift */,
 				DEBA849C234CFFCF005DE767 /* MovieDetailsView.swift */,
+				DEBF69E4234E04B2009240B0 /* BackgroundImage.swift */,
 				DE0CAE5E234BDD910071FF96 /* MovieSearchField.swift */,
 				DEBF69E2234DE8DC009240B0 /* Thumbnail.swift */,
 			);
@@ -243,6 +246,7 @@
 				DE5568FD234C6872001C8ED6 /* DummyData.swift in Sources */,
 				DE0CAE59234BDAA30071FF96 /* MovieDetails.swift in Sources */,
 				DEBA849D234CFFCF005DE767 /* MovieDetailsView.swift in Sources */,
+				DEBF69E5234E04B2009240B0 /* BackgroundImage.swift in Sources */,
 				DE0CAE5D234BDAE80071FF96 /* Movie.swift in Sources */,
 				DE0CAE5B234BDAD70071FF96 /* Genre.swift in Sources */,
 			);

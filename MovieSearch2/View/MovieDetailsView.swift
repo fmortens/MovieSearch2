@@ -9,8 +9,6 @@
 import SwiftUI
 
 struct MovieDetailsView: View {
-    @EnvironmentObject private var searchData: MovieData
-    
     var movie: Movie
     
     var body: some View {
@@ -20,10 +18,8 @@ struct MovieDetailsView: View {
             VStack(alignment: .center, spacing: 8) {
                 
                 HStack(alignment: .center) {
-                    getImage()
-                        .resizable()
-                        .aspectRatio(contentMode: ContentMode.fit)
-                        .frame(width: 100, height: 100, alignment: .leading)
+                    
+                    Thumbnail(movieId: movie.id)
                         
                     Text(movie.title)
                         .font(.title)
@@ -42,22 +38,14 @@ struct MovieDetailsView: View {
             .padding(Edge.Set.top, 80)
             
         }
+        
         .background(
-            
-            getImage()
-                .resizable()
-                .aspectRatio(contentMode: ContentMode.fill)
-                .opacity(0.4)
-                .blur(radius: 4)
-            
+            BackgroundImage(movieId: movie.id)
         )
-            .edgesIgnoringSafeArea(Edge.Set.all)
+            
+        .edgesIgnoringSafeArea(Edge.Set.all)
         
         
-    }
-    
-    func getImage() -> Image {
-        return searchData.images[movie.id] ?? Image("no_signal")
     }
     
 }

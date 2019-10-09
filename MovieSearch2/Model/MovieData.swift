@@ -23,15 +23,14 @@ final class MovieData: ObservableObject {
                 
             if newValue != "" {
                 searchTask = MovieDBClient.searchMovies(query: newValue) { (movies, error) in
-                
-                self.movies = movies
-                
-                self.loadImages()
+                    self.movies = movies
                     
-//                self.sortMovies()
+                    self.loadImages()
                 }
+                
             } else {
                 self.movies.removeAll()
+                self.images.removeAll()
             }
             
         }

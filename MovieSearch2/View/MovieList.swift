@@ -21,10 +21,9 @@ struct MovieList: View {
                     ForEach(searchData.movies) { movie in
                         
                         NavigationLink(
-                            destination: MovieDetailsView(movie: movie).environmentObject(self.searchData)
+                            destination: MovieDetailsView(movie: movie)
                         ) {
                             MovieRow(movie: movie)
-                                .environmentObject(self.searchData)
                                 .listRowInsets(
                                     EdgeInsets(
                                         top: 0,

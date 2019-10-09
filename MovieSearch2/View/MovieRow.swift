@@ -10,18 +10,14 @@ import SwiftUI
 
 struct MovieRow: View {
     
-    @EnvironmentObject private var searchData: MovieData
-    
     var movie: Movie
     
     var body: some View {
         
-        
         HStack(alignment: .center, spacing: 8) {
             
             Thumbnail(movieId: movie.id)
-                .environmentObject(self.searchData)
-            
+                
             VStack(alignment: .leading, spacing: 0) {
                 Text(movie.title).fontWeight(.bold)
                 Text(movie.originalTitle).font(.subheadline)
@@ -31,7 +27,6 @@ struct MovieRow: View {
             Spacer()
         
         }
-        
         
     }
     
