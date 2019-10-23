@@ -18,8 +18,8 @@ struct BackgroundImage: View {
         getImage()
             .resizable()
             .aspectRatio(contentMode: ContentMode.fill)
-            .opacity(0.4)
-            .blur(radius: 4)
+            .opacity(0.2)
+            .blur(radius: 10)
         
     }
     

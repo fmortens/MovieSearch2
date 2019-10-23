@@ -15,23 +15,17 @@ struct MovieDetailsView: View {
         
         ScrollView {
             
-            VStack(alignment: .center, spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
                 
-                HStack(alignment: .center) {
-                    
-                    Thumbnail(movieId: movie.id)
-                        
-                    Text(movie.title)
-                        .font(.title)
-                        .foregroundColor(.black)
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                }
+                Thumbnail(movieId: movie.id)
+                
+                Text(movie.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
                 
                 Text(movie.overview)
                     .font(.body)
-                    .foregroundColor(.black)
                     .fontWeight(.bold)
             }
             .padding(Edge.Set.all)

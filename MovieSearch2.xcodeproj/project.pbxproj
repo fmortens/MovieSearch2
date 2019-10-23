@@ -120,6 +120,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DE1622F22360600E00ED0A82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DE6D032C234B3036000D4666 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +148,7 @@
 			children = (
 				DE6D0338234B3036000D4666 /* AppDelegate.swift */,
 				DE6D033A234B3036000D4666 /* SceneDelegate.swift */,
+				DE1622F22360600E00ED0A82 /* Extensions */,
 				DE0CAE62234BE3430071FF96 /* Resources */,
 				DE0CAE4D234BD96E0071FF96 /* Model */,
 				DE0CAE4A234BD6CC0071FF96 /* View */,
