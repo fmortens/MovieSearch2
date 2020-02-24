@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:MovieSearch2/Tests/TestPlan.xctestplan"
+            reference = "container:MovieSearch2Tests/TestPlan.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
