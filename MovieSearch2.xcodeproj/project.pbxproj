@@ -28,7 +28,19 @@
 		DEBA849D234CFFCF005DE767 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBA849C234CFFCF005DE767 /* MovieDetailsView.swift */; };
 		DEBF69E3234DE8DC009240B0 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF69E2234DE8DC009240B0 /* Thumbnail.swift */; };
 		DEBF69E5234E04B2009240B0 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF69E4234E04B2009240B0 /* BackgroundImage.swift */; };
+		DEE9FA152404002700DC03BD /* MovieSearch2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9FA142404002700DC03BD /* MovieSearch2Tests.swift */; };
+		DEE9FA212404062C00DC03BD /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0CAE5A234BDAD70071FF96 /* Genre.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEE9FA172404002700DC03BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE6D032D234B3036000D4666 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE6D0334234B3036000D4666;
+			remoteInfo = MovieSearch2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DE0CAE4B234BD75D0071FF96 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
@@ -54,10 +66,21 @@
 		DEBA849C234CFFCF005DE767 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		DEBF69E2234DE8DC009240B0 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		DEBF69E4234E04B2009240B0 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		DEE9FA0D2404001400DC03BD /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = TestPlan.xctestplan; path = MovieSearch2/Tests/TestPlan.xctestplan; sourceTree = "<group>"; };
+		DEE9FA122404002700DC03BD /* MovieSearch2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieSearch2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE9FA142404002700DC03BD /* MovieSearch2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearch2Tests.swift; sourceTree = "<group>"; };
+		DEE9FA162404002700DC03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE6D0332234B3036000D4666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE9FA0F2404002700DC03BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,7 +153,9 @@
 		DE6D032C234B3036000D4666 = {
 			isa = PBXGroup;
 			children = (
+				DEE9FA0D2404001400DC03BD /* TestPlan.xctestplan */,
 				DE6D0337234B3036000D4666 /* MovieSearch2 */,
+				DEE9FA132404002700DC03BD /* MovieSearch2Tests */,
 				DE6D0336234B3036000D4666 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6D0335234B3036000D4666 /* MovieSearch2.app */,
+				DEE9FA122404002700DC03BD /* MovieSearch2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +194,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DEE9FA132404002700DC03BD /* MovieSearch2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE9FA142404002700DC03BD /* MovieSearch2Tests.swift */,
+				DEE9FA162404002700DC03BD /* Info.plist */,
+			);
+			path = MovieSearch2Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,18 +223,40 @@
 			productReference = DE6D0335234B3036000D4666 /* MovieSearch2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEE9FA112404002700DC03BD /* MovieSearch2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE9FA192404002700DC03BD /* Build configuration list for PBXNativeTarget "MovieSearch2Tests" */;
+			buildPhases = (
+				DEE9FA0E2404002700DC03BD /* Sources */,
+				DEE9FA0F2404002700DC03BD /* Frameworks */,
+				DEE9FA102404002700DC03BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE9FA182404002700DC03BD /* PBXTargetDependency */,
+			);
+			name = MovieSearch2Tests;
+			productName = MovieSearch2Tests;
+			productReference = DEE9FA122404002700DC03BD /* MovieSearch2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DE6D032D234B3036000D4666 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Frank Mortensen";
 				TargetAttributes = {
 					DE6D0334234B3036000D4666 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					DEE9FA112404002700DC03BD = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DE6D0334234B3036000D4666;
 					};
 				};
 			};
@@ -217,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				DE6D0334234B3036000D4666 /* MovieSearch2 */,
+				DEE9FA112404002700DC03BD /* MovieSearch2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,6 +288,13 @@
 				DE6D0345234B3038000D4666 /* LaunchScreen.storyboard in Resources */,
 				DE6D0342234B3038000D4666 /* Preview Assets.xcassets in Resources */,
 				DE6D033F234B3038000D4666 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE9FA102404002700DC03BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +325,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEE9FA0E2404002700DC03BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE9FA152404002700DC03BD /* MovieSearch2Tests.swift in Sources */,
+				DEE9FA212404062C00DC03BD /* Genre.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEE9FA182404002700DC03BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE6D0334234B3036000D4666 /* MovieSearch2 */;
+			targetProxy = DEE9FA172404002700DC03BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE6D0343234B3038000D4666 /* LaunchScreen.storyboard */ = {
@@ -428,6 +510,48 @@
 			};
 			name = Release;
 		};
+		DEE9FA1A2404002700DC03BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6GHZHRUCU;
+				INFOPLIST_FILE = MovieSearch2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Ble-Example.MovieSearch2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieSearch2.app/MovieSearch2";
+			};
+			name = Debug;
+		};
+		DEE9FA1B2404002700DC03BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6GHZHRUCU;
+				INFOPLIST_FILE = MovieSearch2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Ble-Example.MovieSearch2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieSearch2.app/MovieSearch2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +569,15 @@
 			buildConfigurations = (
 				DE6D034A234B3038000D4666 /* Debug */,
 				DE6D034B234B3038000D4666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE9FA192404002700DC03BD /* Build configuration list for PBXNativeTarget "MovieSearch2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE9FA1A2404002700DC03BD /* Debug */,
+				DEE9FA1B2404002700DC03BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
