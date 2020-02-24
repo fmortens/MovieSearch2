@@ -21,7 +21,7 @@ class MovieSearch2Tests: XCTestCase {
     func testGenre() {
         let genre: Genre = Genre(id: 123, name: "Action")
         XCTAssert(genre.name == "Action")
-        XCTAssert(genre.id == 125)
+        XCTAssert(genre.id == 123)
     }
     
 }
