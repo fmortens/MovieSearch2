@@ -16,7 +16,17 @@
       "target" : {
         "containerPath" : "container:MovieSearch2.xcodeproj",
         "identifier" : "DEE9FA112404002700DC03BD",
-        "name" : "MovieSearch2Tests"
+        "name" : "UnitTests"
+      }
+    },
+    {
+      "skippedTests" : [
+        "MovieSearch2UITests"
+      ],
+      "target" : {
+        "containerPath" : "container:MovieSearch2.xcodeproj",
+        "identifier" : "DE0474A524042306008825DB",
+        "name" : "UITests"
       }
     }
   ],

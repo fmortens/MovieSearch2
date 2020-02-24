@@ -8,7 +8,7 @@
 
 import XCTest
 
-class MovieSearch2Tests: XCTestCase {
+class UnitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
