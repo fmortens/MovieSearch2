@@ -12,22 +12,23 @@ struct MovieList: View {
     @EnvironmentObject private var searchData: MovieData
     
     var body: some View {
-        
         NavigationView {
             VStack(alignment: .leading) {
                 List {
                     ForEach(searchData.movies) { movie in
-                        NavigationLink(destination: MovieDetailsView(movie: movie)) {
-                            MovieRow(movie: movie).listRowInsets(
-                                EdgeInsets(
-                                    top: 0,
-                                    leading: 0,
-                                    bottom: 1,
-                                    trailing: 0
+                        NavigationLink(
+                            destination: MovieDetailsView(movie: movie)
+                        ) {
+                            MovieRow(movie: movie)
+                                .listRowInsets(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 0,
+                                        bottom: 1,
+                                        trailing: 0
+                                    )
                                 )
-                            )
                         }
-                
                     }
                 }
                 .navigationBarTitle(Text("Movies"))
@@ -35,7 +36,6 @@ struct MovieList: View {
                 MovieSearchField()
             }
         }
-        
     }
 }
 

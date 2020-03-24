@@ -18,7 +18,6 @@ struct Thumbnail: View {
     var movieId: Int
     
     var body: some View {
-        
         self.getImage()
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -29,7 +28,6 @@ struct Thumbnail: View {
     func getImage() -> Image {
         return searchData.images[movieId] ?? Image("no_signal")
     }
-    
 }
 
 struct Thumbnail_Previews: PreviewProvider {

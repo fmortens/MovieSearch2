@@ -9,37 +9,24 @@
 import SwiftUI
 
 struct MovieRow: View {
-    
     var movie: Movie
     
     var body: some View {
-        
         HStack(alignment: .center, spacing: 8) {
-            
             Group {
                 Thumbnail(movieId: movie.id)
             }
             .background(Color.black)
             
             VStack(alignment: .leading, spacing: 0) {
-                
-                Text(movie.title)
-                    .fontWeight(.bold)
-                
-                Text(movie.originalTitle)
-                    .font(.subheadline)
-                
-                Text(movie.releaseYear)
-                    .font(.subheadline)
-                
+                Text(movie.title).fontWeight(.bold)
+                Text(movie.originalTitle).font(.subheadline)
+                Text(movie.releaseYear).font(.subheadline)
             }
             
             Spacer()
-        
         }
-        
     }
-    
 }
 
 struct MovieRow_Previews: PreviewProvider {

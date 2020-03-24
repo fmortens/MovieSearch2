@@ -14,13 +14,11 @@ struct BackgroundImage: View {
     var movieId: Int
     
     var body: some View {
-        
         getImage()
             .resizable()
             .aspectRatio(contentMode: ContentMode.fill)
             .opacity(0.2)
             .blur(radius: 10)
-        
     }
     
     func getImage() -> Image {

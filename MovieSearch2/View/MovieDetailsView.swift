@@ -12,11 +12,8 @@ struct MovieDetailsView: View {
     var movie: Movie
     
     var body: some View {
-        
         ScrollView {
-            
             VStack(alignment: .leading, spacing: 8) {
-                
                 Thumbnail(movieId: movie.id)
                 
                 Text(movie.title)
@@ -30,7 +27,6 @@ struct MovieDetailsView: View {
             }
             .padding(Edge.Set.all)
             .padding(Edge.Set.top, 80)
-            
         }
         
         .background(
@@ -38,10 +34,7 @@ struct MovieDetailsView: View {
         )
             
         .edgesIgnoringSafeArea(Edge.Set.all)
-        
-        
     }
-    
 }
 
 struct MovieDetailsView_Previews: PreviewProvider {

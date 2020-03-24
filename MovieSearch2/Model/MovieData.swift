@@ -22,12 +22,13 @@ final class MovieData: ObservableObject {
             searchTask?.cancel()
                 
             if newValue != "" {
-                searchTask = MovieDBClient.searchMovies(query: newValue) { (movies, error) in
+                searchTask = MovieDBClient.searchMovies(
+                    query: newValue
+                ) { (movies, error) in
                     self.movies = movies
                     
                     self.loadImages()
                 }
-                
             } else {
                 self.movies.removeAll()
                 self.images.removeAll()
@@ -44,6 +45,8 @@ final class MovieData: ObservableObject {
                 MovieDBClient.downloadPosterImage(path: imagePath) { (data, error) in
                     guard let imageData = data else {
                         print("Could not load image")
+                        
+                        // Select broken image (or retry button?)
                         return
                     }
 

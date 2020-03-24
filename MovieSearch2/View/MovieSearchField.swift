@@ -20,12 +20,9 @@ struct MovieSearchField: View {
             Button("Clear", action: {
                 self.searchData.searchQuery = ""
             })
-                
         }
         .padding(16)
     }
-    
-    
 }
 
 struct MovieSearchField_Previews: PreviewProvider {
